@@ -1,4 +1,5 @@
-# mw-snl
+# MW-SNL
+
 A revised version of the MW master-worker framework.
 
 ## NOTES
