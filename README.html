@@ -1,0 +1,79 @@
+<pre>
+------------------------------------------------------------------------------
+MW-SNL
+
+MW-SNL an adaptation of the MW C++ software, which implements a dynamic
+master-worker style application that works robustly in the distributed,
+opportunistic environments.
+
+------------------------------------------------------------------------------
+William E. Hart
+Sandia National Laboratories
+wehart@sandia.gov 
+
+------------------------------------------------------------------------------
+License.
+
+MW-SNL is distributed under the GNU Lesser General Public License.  It is
+free software; you can redistribute it and/or modify it under the terms of
+the GNU Lesser General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any
+later version.  A copy of this license is included in the LICENSE file,
+and is also available online from http://www.gnu.org/copyleft/lesser.html.
+Also refer to the COPYRIGHT file for important U.S. Government legal
+notices.
+
+------------------------------------------------------------------------------
+Overview.
+
+MW is a set of C++ abstract base classes that hide the difficult
+metacomputing issues that can arise in simple master-worker parallel
+algorithms. The goal of MW is to hide the characteristics of the
+underlying environment by abstracting and exposing a complete API to the
+user. MW transparently handles the various system events of the underlying
+resource manager thereby allowing the user to focus on the main algorithm
+at hand. Based on a layered architecture, MW makes implementation highly
+portable across different metacomputing environments. Also MW incorporates
+a very elegant group management mechanism that allows users to group their
+work into different classes. Using this mechanism, users have to merely
+manipulate group memberships of tasks and workers. MW takes care of the
+distribution of tasks to workers based on group memberships. 
+
+MW-SNL extends the MW software framework to more systematically allow
+for templatization of the C++ MW core.  Additionally, MW-SNL implements
+a communication layer based on the MPI parallel communication API.
+
+------------------------------------------------------------------------------
+Installation.
+
+No configuration or makefile facilities are provided with MW-SNL.  
+
+------------------------------------------------------------------------------
+Dependencies
+
+This code was compiled using makefiles from the SGOPT optimization
+library. However, it should be easy to compile this on many different
+platforms.
+
+------------------------------------------------------------------------------
+Platforms.
+
+This package is quite generic and thus it should compile on a wide range
+of platforms.  Specifically, this code has been compiles on RedHat Linux,
+and SOLARIS CC 5.2+ and g++ 3.x.
+
+------------------------------------------------------------------------------
+Versions.
+
+This release is version 1.0.
+
+------------------------------------------------------------------------------
+Documentation.
+
+No documentation is provided.  However, MW-SNL provides significantly
+more source-code documentation than the original MW code.  Additionally,
+comments have been added in a format that should be compatable with
+doxygen.
+
+------------------------------------------------------------------------------
+</pre>
